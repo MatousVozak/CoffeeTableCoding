@@ -1,5 +1,8 @@
 #include <iostream>
 #include <vector>
+
+#include <memory>  //for smart pointers
+
 using namespace std;
 
 //--------------POINTERS-------------------
@@ -74,7 +77,7 @@ void use_of_pointers(){
 
 
 /** */
-void use_of_reference(){
+void use_of_references(){
    //Reference is basically other name for a variable (alias)
    //It needs to be initialized at the point of definition!
 
@@ -100,11 +103,9 @@ void use_of_reference(){
 }
 /** */
 void general_concept(){
-
-
+   
    use_of_pointers();
-
-   use_of_reference();
+   use_of_references();
 
    return;
 }
@@ -175,12 +176,23 @@ int function_pointers(){
 }
 
 
+
+/////////////////////////////////////////////
+///////////////---MAIN----///////////////////
+/////////////////////////////////////////////
+
 int main(){
 
 //Introduction to pointers
 general_concept();
 
+//TODO: smart pointers
+//smart_pointers();
+
+//TODO: Finish
 //Use of function pointers
 function_pointers();
+
+
    return 0;
 }
